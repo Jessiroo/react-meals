@@ -1,0 +1,66 @@
+.input {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-bottom: 0.5rem;
+  overflow: auto;
+}
+
+.input label {
+  font-weight: bold;
+  margin-right: 1rem;
+}
+
+.input input {
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font: inherit;
+  padding-left: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.input .invalidInput input {
+  border: 1px solid #a10000;
+  background-color: #ffd2d2;
+  margin-bottom: 0rem;
+}
+
+.input .invalidInput p {
+  color: #a10000;
+  margin-bottom: 1rem;
+}
+
+.actions {
+  text-align: right;
+}
+
+.actions button {
+  font: inherit;
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid #8a2b06;
+  padding: 0.5rem 2rem;
+  border-radius: 25px;
+  margin-left: 1rem;
+}
+
+.actions button:hover,
+.actions button:active {
+  background-color: #5a1a01;
+  border-color: #5a1a01;
+  color: white;
+}
+
+.actions .button--alt {
+  color: #8a2b06;
+}
+
+.actions .button {
+  background-color: #8a2b06;
+  color: white;
+}
+
+.notice {
+  font-size: 0.7rem;
+}
